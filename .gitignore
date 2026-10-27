@@ -1,0 +1,9 @@
+# Sphinx/Doxygen build output
+_build/
+doxygen/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc

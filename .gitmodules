@@ -1,0 +1,3 @@
+[submodule "vendor/webbridge-runtime"]
+	path = vendor/webbridge-runtime
+	url = https://github.com/WebBridge-Project/webbridge-runtime.git
