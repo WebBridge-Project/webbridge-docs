@@ -1,12 +1,19 @@
 # Getting Started
 
+```{note}
+Both packages below are still internal: `webbridge-runtime` lives on a
+private Conan server (login required) and `webbridge-tools` isn't on PyPI
+yet. These steps document the intended setup, not something outside users
+can follow today.
+```
+
 ## Prerequisites
 
 - **Visual Studio 2022** with C++ Desktop Development (MSVC compiler)
 - **Conan 2** and **CMake 3.26+**
-- **Python 3.9+** with [webbridge-tools](https://pypi.org/project/webbridge-tools/)
-  installed (`pip install webbridge-tools`) — provides the code generator
-  and its `webbridge_generate()` CMake function
+- **Python 3.9+** with [webbridge-tools](https://github.com/WebBridge-Project/webbridge-tools)
+  installed — provides the code generator and its `webbridge_generate()`
+  CMake function (see the note above on installing it pre-PyPI)
 - **Microsoft Edge WebView2 Runtime** (usually preinstalled on Windows 10/11)
 
 `webbridge-runtime` is Conan-only and covers the C++ library only;

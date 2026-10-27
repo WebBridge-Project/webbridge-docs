@@ -1,5 +1,13 @@
 # webbridge
 
+```{note}
+Public availability is still in progress. `webbridge-runtime` is currently
+only published to a private Conan server, and `webbridge-tools` hasn't been
+published to PyPI yet (only installable from its GitHub repo). The install
+steps on this site describe the intended workflow once both are public —
+they won't work for outside users yet.
+```
+
 C++ objects seamlessly integrated into modern web applications — a **Qt
 alternative** for web-based UIs. Where Qt relies on QML/Qt Quick or Qt
 WebEngine, webbridge lets you build the UI with standard web technologies
