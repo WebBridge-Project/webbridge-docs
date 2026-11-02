@@ -62,6 +62,14 @@ generates the glue code that exposes them to JavaScript.
 Short description and Conan install info for the C++ library.
 :::
 
+:::{grid-item-card} {octicon}`terminal` webbridge-tools
+:link: tools/index
+:link-type: doc
+
+The Python code generator: `webbridge-generate`, `webbridge-discoverer`,
+`webbridge-parser`, and the underlying Python API.
+:::
+
 :::{grid-item-card} {octicon}`rocket` Getting Started
 :link: getting-started
 :link-type: doc
@@ -93,14 +101,6 @@ Doxygen/Breathe-generated reference for `webbridge::object`, properties,
 events and error handling.
 :::
 
-:::{grid-item-card} {octicon}`terminal` webbridge-tools
-:link: tools/index
-:link-type: doc
-
-The Python code generator: `webbridge-generate`, `webbridge-discoverer`,
-`webbridge-parser`, and the underlying Python API.
-:::
-
 ::::
 
 ```{toctree}
@@ -108,9 +108,9 @@ The Python code generator: `webbridge-generate`, `webbridge-discoverer`,
 :hidden:
 
 webbridge-runtime <runtime>
+webbridge-tools <tools/index>
 Getting Started <getting-started>
 Concepts <concepts>
 Examples <examples>
 C++ API Reference <cpp-api>
-webbridge-tools <tools/index>
 ```
