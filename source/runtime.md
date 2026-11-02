@@ -21,13 +21,3 @@ def requirements(self):
 See [Getting Started](getting-started.md) for adding the Conan remote and
 wiring it into CMake, and [Concepts](concepts.md) / [Examples](examples.md) /
 [C++ API Reference](cpp-api.rst) for the library itself.
-
-```{toctree}
-:maxdepth: 2
-:hidden:
-
-Getting Started <getting-started>
-Concepts <concepts>
-Examples <examples>
-C++ API Reference <cpp-api>
-```

@@ -46,6 +46,10 @@ html_theme_options = {
     ],
 }
 
+# -- Disable the left primary sidebar site-wide; navigation lives in the top
+# -- navbar tabs/dropdowns instead -------------------------------------------
+html_sidebars = {"**": []}
+
 # -- Breathe (C++ API, from webbridge-runtime headers via Doxygen) ----------
 breathe_projects = {"webbridge": "../doxygen/xml"}
 breathe_default_project = "webbridge"
