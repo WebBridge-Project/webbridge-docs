@@ -1,12 +1,19 @@
-# webbridge
+# webbridge documentation
 
 ```{note}
-Public availability is still in progress. `webbridge-runtime` is currently
-only published to a private Conan server, and `webbridge-tools` hasn't been
-published to PyPI yet (only installable from its GitHub repo). The install
-steps on this site describe the intended workflow once both are public —
-they won't work for outside users yet.
+Public availability is still in progress. `webbridge-tools` is published on
+PyPI and installable with `pip install webbridge-tools`, but
+`webbridge-runtime` is currently only published to a private Conan server —
+the Conan install steps on this site won't work for outside users yet.
 ```
+
+**Versions:** webbridge-runtime (Conan) `0.1.0` · webbridge-tools (PyPI) `1.0.0`
+
+**Useful links:**
+[webbridge-runtime source](https://github.com/WebBridge-Project/webbridge-runtime) |
+[webbridge-tools source](https://github.com/WebBridge-Project/webbridge-tools) |
+[webbridge-tools on PyPI](https://pypi.org/project/webbridge-tools/) |
+[Getting Started](getting-started.md)
 
 C++ objects seamlessly integrated into modern web applications — a **Qt
 alternative** for web-based UIs. Where Qt relies on QML/Qt Quick or Qt
@@ -36,35 +43,66 @@ property<bool> aBool;
 ```
 
 webbridge is split across two packages that this site documents together:
+**webbridge-runtime** is the C++ library (Conan package) — `webbridge::object`,
+properties, events, constants, error handling, and the
+[webview](https://github.com/webview/webview)-based bridge to JavaScript.
+**webbridge-tools** is the Python code generator (pip package) that reads
+your C++ classes via tree-sitter and emits the C++ registration headers and
+TypeScript type definitions. Both are required together: `webbridge-runtime`
+provides the C++ types you write your classes against, `webbridge-tools`
+generates the glue code that exposes them to JavaScript.
 
-- **webbridge-runtime** ([GitHub](https://github.com/WebBridge-Project/webbridge-runtime)) —
-  the C++ library: `webbridge::object`, properties, events, constants, error
-  handling, and the [webview](https://github.com/webview/webview)-based
-  bridge to JavaScript. Distributed as a Conan 2 package.
-- **[webbridge-tools](https://github.com/WebBridge-Project/webbridge-tools)** — the
-  Python code generator that reads your C++ classes (via tree-sitter) and
-  emits the C++ registration headers and TypeScript type definitions.
-  Distributed as a pip package and wired into your build through CMake.
+::::{grid} 1 2 3 3
+:gutter: 3
 
-Both are required together: `webbridge-runtime` provides the C++ types you
-write your classes against, `webbridge-tools` generates the glue code that
-exposes them to JavaScript.
+:::{grid-item-card} {octicon}`rocket` Getting Started
+:link: getting-started
+:link-type: doc
+
+Set up the Conan remote, wire `webbridge_generate()` into CMake, and register
+your first class.
+:::
+
+:::{grid-item-card} {octicon}`book` Concepts
+:link: concepts
+:link-type: doc
+
+How properties, events, methods and constants map from Qt onto web-native
+JavaScript, plus error handling and known limitations.
+:::
+
+:::{grid-item-card} {octicon}`file-code` Examples
+:link: examples
+:link-type: doc
+
+A minimal end-to-end C++ class exposed to JavaScript.
+:::
+
+:::{grid-item-card} {octicon}`code` C++ API Reference
+:link: cpp-api
+:link-type: doc
+
+Doxygen/Breathe-generated reference for `webbridge::object`, properties,
+events and error handling.
+:::
+
+:::{grid-item-card} {octicon}`terminal` webbridge-tools
+:link: tools/index
+:link-type: doc
+
+The Python code generator: `webbridge-generate`, `webbridge-discoverer`,
+`webbridge-parser`, and the underlying Python API.
+:::
+
+::::
 
 ```{toctree}
 :maxdepth: 2
-:caption: webbridge-runtime
+:hidden:
 
-getting-started
-concepts
-examples
-cpp-api
-```
-
-```{toctree}
-:maxdepth: 2
-:caption: webbridge-tools
-
-tools/index
-tools/cli
-tools/api
+Getting Started <getting-started>
+Concepts <concepts>
+Examples <examples>
+C++ API Reference <cpp-api>
+webbridge-tools <tools/index>
 ```

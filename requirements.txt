@@ -1,7 +1,6 @@
 sphinx>=7,<9
-furo
+pydata-sphinx-theme
+sphinx-design
 myst-parser
 breathe
-# Not (yet) published to PyPI under this name despite the README badge;
-# install straight from source so autodoc can import it.
-webbridge-tools @ git+https://github.com/WebBridge-Project/webbridge-tools.git
+webbridge-tools

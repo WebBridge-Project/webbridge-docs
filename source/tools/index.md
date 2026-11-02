@@ -1,12 +1,6 @@
 # webbridge-tools
 
-```{note}
-Not yet published to PyPI. Until it is, install directly from its GitHub
-repo instead of `pip install webbridge-tools`:
-`pip install git+https://github.com/WebBridge-Project/webbridge-tools.git`
-```
-
-[webbridge-tools](https://github.com/WebBridge-Project/webbridge-tools) is
+[webbridge-tools](https://pypi.org/project/webbridge-tools/) is
 the Python code generator for webbridge: it reads your C++ classes that
 inherit from `webbridge::object` and emits the C++ registration headers and
 TypeScript type definitions that wire them up to JavaScript. Code generation
@@ -15,8 +9,7 @@ exists because C++26 reflection isn't available yet.
 It's deliberately a separate, pip-installable package rather than something
 bundled into the `webbridge-runtime` Conan package — the generator has its
 own dependencies (tree-sitter, Jinja2) and its own release cadence,
-independent of the C++ library it generates code for. Once published,
-installing it will be:
+independent of the C++ library it generates code for. Install it with:
 
 ```bash
 pip install webbridge-tools
@@ -36,3 +29,11 @@ See [Getting Started](../getting-started.md) for wiring it into CMake, and
 4. It renders, via Jinja2 templates, a `_registration.h` file (C++) and the
    matching TypeScript bindings.
 5. You `#include` the generated header and call `webbridge::register_type<T>()`.
+
+```{toctree}
+:maxdepth: 2
+:hidden:
+
+CLI Reference <cli>
+Python API Reference <api>
+```
