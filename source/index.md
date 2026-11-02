@@ -55,6 +55,14 @@ generates the glue code that exposes them to JavaScript.
 ::::{grid} 1 2 3 3
 :gutter: 3
 
+:::{grid-item-card} {octicon}`rocket` Getting Started
+:link: getting-started
+:link-type: doc
+
+Set up the Conan remote, wire `webbridge_generate()` into CMake, and register
+your first class.
+:::
+
 :::{grid-item-card} {octicon}`repo` webbridge-runtime
 :link: runtime
 :link-type: doc
@@ -68,14 +76,6 @@ Short description and Conan install info for the C++ library.
 
 The Python code generator: `webbridge-generate`, `webbridge-discoverer`,
 `webbridge-parser`, and the underlying Python API.
-:::
-
-:::{grid-item-card} {octicon}`rocket` Getting Started
-:link: getting-started
-:link-type: doc
-
-Set up the Conan remote, wire `webbridge_generate()` into CMake, and register
-your first class.
 :::
 
 :::{grid-item-card} {octicon}`book` Concepts
@@ -107,9 +107,9 @@ events and error handling.
 :maxdepth: 2
 :hidden:
 
+Getting Started <getting-started>
 webbridge-runtime <runtime>
 webbridge-tools <tools/index>
-Getting Started <getting-started>
 Concepts <concepts>
 Examples <examples>
 C++ API Reference <cpp-api>
