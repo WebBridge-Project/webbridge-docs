@@ -11,7 +11,7 @@ inspired by Qt, with each Qt concept mapped onto something web-native:
 | Constant           | enum/static const       | read-only value                    |
 
 The generated code is functionally inspired by Qt's MOC (Meta-Object
-Compiler), but needs far less boilerplate — see [webbridge-tools](tools/index.md)
+Compiler), but needs far less boilerplate — see [webbridge-tools](tools.md)
 for how that generation works.
 
 ## Methods

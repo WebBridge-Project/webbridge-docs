@@ -17,7 +17,7 @@
 
 `webbridge-runtime` is Conan-only and covers the C++ library only;
 `webbridge-tools` is a separate, pip-installable package — see
-[webbridge-tools](tools/index.md) for what it does and why it's separate.
+[webbridge-tools](tools.md) for what it does and why it's separate.
 
 ## 0. Add the Conan remote
 

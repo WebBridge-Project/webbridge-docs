@@ -45,4 +45,4 @@ CMake via `COMMAND_OUTPUT_VARIABLE`.
 The tree-sitter based parser that extracts class information (properties,
 events, methods) from a C++ header — used internally by `webbridge-generate`,
 but also usable standalone for inspection/debugging. See the
-[Python API](api.rst) for `parse_header()` and `ClassInfo`.
+[Python API](tools-api.rst) for `parse_header()` and `ClassInfo`.

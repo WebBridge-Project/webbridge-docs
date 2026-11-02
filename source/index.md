@@ -71,7 +71,7 @@ Short description and Conan install info for the C++ library.
 :::
 
 :::{grid-item-card} {octicon}`terminal` webbridge-tools
-:link: tools/index
+:link: tools
 :link-type: doc
 
 The Python code generator: `webbridge-generate`, `webbridge-discoverer`,
@@ -109,7 +109,7 @@ events and error handling.
 
 Getting Started <getting-started>
 webbridge-runtime <runtime>
-webbridge-tools <tools/index>
+webbridge-tools <tools>
 Concepts <concepts>
 Examples <examples>
 C++ API Reference <cpp-api>

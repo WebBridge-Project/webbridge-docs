@@ -15,13 +15,13 @@ independent of the C++ library it generates code for. Install it with:
 pip install webbridge-tools
 ```
 
-See [Getting Started](../getting-started.md) for wiring it into CMake, and
-[CLI Reference](cli.md) / [Python API](api.rst) for the generator itself.
+See [Getting Started](getting-started.md) for wiring it into CMake, and
+[CLI Reference](cli.md) / [Python API](tools-api.rst) for the generator itself.
 
 ## How it fits together
 
 1. You write a C++ class inheriting from `webbridge::object` (see
-   [Minimal Example](../examples.md)).
+   [Minimal Example](examples.md)).
 2. `webbridge_generate()` (a CMake function provided by this package) calls
    the generator automatically as part of your build.
 3. The generator uses **tree-sitter** to parse the C++ header, extracting
@@ -35,5 +35,5 @@ See [Getting Started](../getting-started.md) for wiring it into CMake, and
 :hidden:
 
 CLI Reference <cli>
-Python API Reference <api>
+Python API Reference <tools-api>
 ```

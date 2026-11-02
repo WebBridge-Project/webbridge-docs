@@ -10,11 +10,11 @@ WARN_IF_UNDOCUMENTED   = NO
 
 # Public API surface only: object.h / error.h and the two headers they alias
 # (property<T>, event<Args...>). The rest of impl/ is implementation detail.
-# Headers come from the webbridge-runtime git submodule under vendor/.
-INPUT                  = vendor/webbridge-runtime/src/webbridge/object.h \
-                          vendor/webbridge-runtime/src/webbridge/error.h \
-                          vendor/webbridge-runtime/src/webbridge/impl/property_impl.h \
-                          vendor/webbridge-runtime/src/webbridge/impl/event_impl.h
+# Headers come from the webbridge-runtime git submodule checked out at vendor/.
+INPUT                  = vendor/src/webbridge/object.h \
+                          vendor/src/webbridge/error.h \
+                          vendor/src/webbridge/impl/property_impl.h \
+                          vendor/src/webbridge/impl/event_impl.h
 
 JAVADOC_AUTOBRIEF       = YES
 EXTRACT_ALL             = YES
