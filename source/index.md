@@ -52,46 +52,24 @@ TypeScript type definitions. Both are required together: `webbridge-runtime`
 provides the C++ types you write your classes against, `webbridge-tools`
 generates the glue code that exposes them to JavaScript.
 
-::::{grid} 1 2 3 3
+::::{grid} 1 2 2 2
 :gutter: 3
 
-:::{grid-item-card} {octicon}`rocket` Getting Started
-:link: getting-started
+:::{grid-item-card} {octicon}`repo` webbridge-runtime
+:link: runtime
 :link-type: doc
 
-Set up the Conan remote, wire `webbridge_generate()` into CMake, and register
-your first class.
-:::
-
-:::{grid-item-card} {octicon}`book` Concepts
-:link: concepts
-:link-type: doc
-
-How properties, events, methods and constants map from Qt onto web-native
-JavaScript, plus error handling and known limitations.
-:::
-
-:::{grid-item-card} {octicon}`file-code` Examples
-:link: examples
-:link-type: doc
-
-A minimal end-to-end C++ class exposed to JavaScript.
-:::
-
-:::{grid-item-card} {octicon}`code` C++ API Reference
-:link: cpp-api
-:link-type: doc
-
-Doxygen/Breathe-generated reference for `webbridge::object`, properties,
-events and error handling.
+The C++ library — `webbridge::object`, properties, events, constants, error
+handling. Conan package. Start here for Getting Started, Concepts, Examples
+and the C++ API Reference.
 :::
 
 :::{grid-item-card} {octicon}`terminal` webbridge-tools
 :link: tools/index
 :link-type: doc
 
-The Python code generator: `webbridge-generate`, `webbridge-discoverer`,
-`webbridge-parser`, and the underlying Python API.
+The Python code generator — `webbridge-generate`, `webbridge-discoverer`,
+`webbridge-parser`. Pip package. Includes the CLI and Python API Reference.
 :::
 
 ::::
@@ -100,9 +78,6 @@ The Python code generator: `webbridge-generate`, `webbridge-discoverer`,
 :maxdepth: 2
 :hidden:
 
-Getting Started <getting-started>
-Concepts <concepts>
-Examples <examples>
-C++ API Reference <cpp-api>
+webbridge-runtime <runtime>
 webbridge-tools <tools/index>
 ```
