@@ -2,5 +2,4 @@ sphinx>=7,<9
 pydata-sphinx-theme
 sphinx-design
 myst-parser
-breathe
 webbridge-tools

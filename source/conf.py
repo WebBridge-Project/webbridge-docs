@@ -5,7 +5,6 @@ release = "0.1.0"
 
 extensions = [
     "myst_parser",
-    "breathe",
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
@@ -49,10 +48,6 @@ html_theme_options = {
 # -- Disable the left primary sidebar site-wide; navigation lives in the top
 # -- navbar tabs/dropdowns instead -------------------------------------------
 html_sidebars = {"**": []}
-
-# -- Breathe (C++ API, from webbridge-runtime headers via Doxygen) ----------
-breathe_projects = {"webbridge": "../doxygen/xml"}
-breathe_default_project = "webbridge"
 
 # -- Autodoc (Python API, from the installed webbridge-tools package) ------
 autodoc_member_order = "bysource"

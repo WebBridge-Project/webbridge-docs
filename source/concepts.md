@@ -65,8 +65,9 @@ operations, propagated as rejected Promises:
 
 This is inspired by JSON-RPC 2.0, GraphQL, and HTTP status codes; promises
 reject automatically on error, enabling plain `async`/`await` exception
-handling on the JavaScript side. See the [C++ API reference](cpp-api.rst)
-for `webbridge::error` and `webbridge::set_error_handler`.
+handling on the JavaScript side — see `webbridge::error` and
+`webbridge::set_error_handler` in the
+[webbridge-runtime source](https://github.com/WebBridge-Project/webbridge-runtime).
 
 ## Registration
 

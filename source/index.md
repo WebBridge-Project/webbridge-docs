@@ -93,14 +93,6 @@ JavaScript, plus error handling and known limitations.
 A minimal end-to-end C++ class exposed to JavaScript.
 :::
 
-:::{grid-item-card} {octicon}`code` C++ API Reference
-:link: cpp-api
-:link-type: doc
-
-Doxygen/Breathe-generated reference for `webbridge::object`, properties,
-events and error handling.
-:::
-
 ::::
 
 ```{toctree}
@@ -112,5 +104,4 @@ webbridge-runtime <runtime>
 webbridge-tools <tools>
 Concepts <concepts>
 Examples <examples>
-C++ API Reference <cpp-api>
 ```
