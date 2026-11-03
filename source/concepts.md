@@ -1,3 +1,11 @@
+---
+myst:
+  html_meta:
+    "description": "How webbridge maps properties, events, methods, and
+      constants from Qt-like C++ onto JavaScript, plus its error handling
+      model."
+---
+
 # Concepts
 
 Every class exposed to the web inherits from `webbridge::object`. The API is

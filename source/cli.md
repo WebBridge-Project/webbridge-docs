@@ -1,3 +1,11 @@
+---
+myst:
+  html_meta:
+    "description": "Command-line reference for webbridge-generate,
+      webbridge-discoverer, and webbridge-parser, the console scripts
+      installed by webbridge-tools."
+---
+
 # CLI Reference
 
 `webbridge-tools` installs three console scripts (see `[project.scripts]` in

@@ -3,6 +3,16 @@ copyright = "2026 F&S Bondtec Semiconductor GmbH"
 author = "F&S Bondtec Semiconductor GmbH"
 release = "0.1.0"
 
+# -- SEO: canonical URL for <link rel="canonical"> tags on every page. Update
+# -- this to the "stable" URL once a tagged release exists and RTD's default
+# -- version switches from "latest" to "stable". ----------------------------
+html_baseurl = "https://webbridge-docs.readthedocs.io/en/latest/"
+
+# -- SEO: each page sets its own <meta name="description"> via MyST front
+# -- matter (.md pages, see index.md) or a `.. meta::` directive (.rst pages,
+# -- see tools-api.rst). No sitewide default: a unique description per page
+# -- beats one duplicated everywhere. ---------------------------------------
+
 extensions = [
     "myst_parser",
     "sphinx.ext.autodoc",

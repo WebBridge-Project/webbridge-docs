@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "A minimal C++ class with properties, events, and methods
+      exposed to JavaScript using webbridge."
+---
+
 # Minimal Example
 
 A C++ class with methods, properties, and events exposed to the web:

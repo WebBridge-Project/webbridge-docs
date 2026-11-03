@@ -1,3 +1,11 @@
+---
+myst:
+  html_meta:
+    "description": "webbridge-tools is the Python code generator for
+      webbridge: it reads your C++ classes and writes the JavaScript/
+      TypeScript binding code for you."
+---
+
 # webbridge-tools
 
 [webbridge-tools](https://pypi.org/project/webbridge-tools/) is

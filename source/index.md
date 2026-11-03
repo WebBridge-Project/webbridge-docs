@@ -1,3 +1,11 @@
+---
+myst:
+  html_meta:
+    "description": "webbridge lets you build web-based UIs with C++
+      application logic underneath, with far less boilerplate than Qt — no
+      manual getters, setters, or signals."
+---
+
 # webbridge documentation
 
 ```{note}

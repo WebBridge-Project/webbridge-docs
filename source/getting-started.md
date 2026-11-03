@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    "description": "How to add webbridge to a C++ project with Conan and
+      CMake, and register your first webbridge::object class."
+---
+
 # Getting Started
 
 ```{note}

@@ -1,3 +1,11 @@
+---
+myst:
+  html_meta:
+    "description": "webbridge-runtime is the C++ library behind webbridge:
+      webbridge::object, properties, events, and the webview-based bridge to
+      JavaScript."
+---
+
 # webbridge-runtime
 
 ```{note}
