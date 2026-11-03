@@ -1,6 +1,6 @@
 project = "webbridge"
-copyright = "2026 F&S Bondtec Semiconductor GmbH"
-author = "F&S Bondtec Semiconductor GmbH"
+copyright = "2026 Webbridge-Project"
+author = "Webbridge-Project"
 release = "0.1.0"
 
 # -- SEO: canonical URL for <link rel="canonical"> tags on every page. Update
