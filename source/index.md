@@ -1,10 +1,8 @@
 # webbridge documentation
 
 ```{note}
-Public availability is still in progress. `webbridge-tools` is published on
-PyPI and installable with `pip install webbridge-tools`, but
-`webbridge-runtime` is currently only published to a private Conan server —
-the Conan install steps on this site won't work for outside users yet.
+Public availability is still in progress. `webbridge-runtime` is currently only published to a private Conan server —
+the Conan install steps on this site won't work yet.
 ```
 
 **Versions:** webbridge-runtime (Conan) `0.1.0` · webbridge-tools (PyPI) `1.0.0`
@@ -15,11 +13,14 @@ the Conan install steps on this site won't work for outside users yet.
 [webbridge-tools on PyPI](https://pypi.org/project/webbridge-tools/) |
 [Getting Started](getting-started.md)
 
-C++ objects seamlessly integrated into modern web applications — a **Qt
-alternative** for web-based UIs. Where Qt relies on QML/Qt Quick or Qt
+
+## What is webbridge?
+
+Webbridge is a simple way to combine a C++ backend with a web-based UI. It got created as a modern **Qt alternative** which is open source. Where Qt relies on QML/Qt Quick or Qt
 WebEngine, webbridge lets you build the UI with standard web technologies
 while keeping application logic in C++.
 
+A significant advantage over Qt is the significantly reduced boilerplate code. 
 A simple reactive property in Qt needs a getter, a setter, a signal and a
 backing field:
 

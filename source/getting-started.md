@@ -3,7 +3,6 @@
 ```{note}
 `webbridge-runtime` is still internal: it lives on a private Conan server
 (login required), so the Conan steps below won't work for outside users yet.
-`webbridge-tools` is public and installable from PyPI.
 ```
 
 ## Prerequisites
@@ -19,20 +18,6 @@
 `webbridge-tools` is a separate, pip-installable package — see
 [webbridge-tools](tools.md) for what it does and why it's separate.
 
-## 0. Add the Conan remote
-
-`webbridge-runtime` is published on an internal Conan server, not
-ConanCenter, so it needs to be added as a remote (and logged into, since it
-isn't anonymous) before `conan install`/`conan create` can find the package:
-
-```bash
-conan remote add --insecure --index 0 fsb http://<server-host>:9300
-conan remote login fsb <username> -p <password>
-```
-
-`--index 0` gives this server priority over `conancenter` when resolving
-`webbridge` itself; other dependencies such as `nlohmann_json` still resolve
-from `conancenter` as usual.
 
 ## 1. Declare the dependency
 
